@@ -1,0 +1,24 @@
+:root { color-scheme: dark; font: 15px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0c1523; color: #eaf3f8; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 760px; margin: 0 auto; padding: 44px 28px; }
+header { display: flex; align-items: center; gap: 12px; font-weight: 650; margin-bottom: 56px; }
+.eyebrow { margin: 0 0 9px; color: #79e2c7; font-size: 11px; font-weight: 650; letter-spacing: .13em; }
+h1 { font-size: clamp(27px, 5vw, 37px); letter-spacing: -.04em; line-height: 1.2; font-weight: 650; margin: 0 0 16px; }
+.intro { color: #c0d0de; margin: 0 0 20px; }
+.context { border-left: 2px solid #79e2c7; padding-left: 14px; color: #9fb6c9; font-size: 13px; margin: 0 0 30px; }
+section { background: #152535; border: 1px solid #2a4054; border-radius: 16px; padding: 24px; }
+h2 { font-size: 14px; font-weight: 600; margin: 0 0 14px; }
+.actions { display: flex; flex-wrap: wrap; gap: 9px; }
+button { font: inherit; font-size: 13px; font-weight: 650; color: #10372f; background: #79e2c7; border: 1px solid transparent; border-radius: 8px; padding: 10px 14px; cursor: pointer; }
+button:hover { background: #98ecd6; }
+button.secondary { background: transparent; color: #d3e0e9; border-color: #496174; }
+button.secondary:hover { background: #23394b; }
+button:focus-visible { outline: 2px solid #b2f2df; outline-offset: 3px; }
+button:disabled { opacity: .45; cursor: default; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; font: 12px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; padding: 16px; margin: 20px 0 0; min-height: 98px; border: 1px solid #2b4052; border-radius: 10px; color: #b1c5d5; background: #0d1926; }
+pre[data-state="success"] { color: #a9ecd6; border-color: #3a6c60; }
+pre[data-state="error"] { color: #ffc4be; border-color: #805352; }
+.help { font-size: 13px; color: #9fb6c9; margin-top: 24px; }
+footer { border-top: 1px solid #26394b; padding-top: 17px; margin-top: 32px; color: #88a294; font-size: 11px; }
+@media (max-width: 480px) { main { padding: 28px 20px; } header { margin-bottom: 36px; } section { padding: 18px; } button { width: 100%; } }

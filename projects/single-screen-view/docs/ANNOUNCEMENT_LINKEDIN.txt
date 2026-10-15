@@ -1,0 +1,14 @@
+I’m sharing Single Screen View — a small open-source browser extension I built with Codex.
+
+It presents a fixed, single-display view through supported web screen APIs, with an on/off switch, English and Russian UI, and optional local camera/microphone checks.
+
+Everything runs locally. No analytics, accounts or data uploads. The extension changes what selected JavaScript APIs report; it does not change the operating system’s display setup or guarantee that other screens cannot be detected.
+
+This is an early Chromium beta for developer-mode installation. Store submissions and wider browser compatibility are still in progress.
+
+Code and download:
+https://github.com/d1xerzip/AI_JOURNEY/tree/main/projects/single-screen-view
+
+I’d appreciate feedback on compatibility, the interface, and useful browser-tooling use cases.
+
+#OpenSource #BrowserExtensions #BuildInPublic #Codex

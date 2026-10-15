@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Camera & microphone check · Single Screen View</title>
+  <link rel="stylesheet" href="media-check.css">
+</head>
+<body>
+  <main>
+    <header><img src="assets/single-screen-view.svg" width="44" height="44" alt=""><span>Single Screen View</span></header>
+    <p class="eyebrow" data-i18n="mediaEyebrow">LOCAL DIAGNOSTICS</p>
+    <h1 data-i18n="mediaHeading">Check camera & microphone</h1>
+    <p class="intro" data-i18n="mediaIntro">Each button requests normal browser permission, then immediately stops every acquired track. No preview, recording, or upload.</p>
+    <p class="context" data-i18n="mediaContext">This checks the extension page’s permission context. A successful result does not prove that another website has permission, or that its frame policies allow access.</p>
+    <section aria-labelledby="test-heading">
+      <h2 id="test-heading" data-i18n="mediaChoose">Choose a check</h2>
+      <div class="actions"><button id="check-camera" data-i18n="mediaCamera">Camera only</button><button id="check-microphone" data-i18n="mediaMicrophone">Microphone only</button><button id="check-both" class="secondary" data-i18n="mediaBoth">Camera + microphone</button></div>
+      <pre id="result" role="status" aria-live="polite" data-i18n="mediaIdle">No check has run. Access is requested only when you click a button.</pre>
+    </section>
+    <p class="help" data-i18n="mediaHelp">If this works but a website still fails, check that site’s camera and microphone permissions, your operating system’s privacy settings, and whether another application is using the device.</p>
+    <footer data-i18n="mediaPrivacy">Results stay in this tab and disappear when it closes. Device names and identifiers are not collected.</footer>
+  </main>
+  <script src="media-check.js"></script>
+</body>
+</html>

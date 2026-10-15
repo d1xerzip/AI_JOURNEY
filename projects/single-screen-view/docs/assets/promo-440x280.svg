@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280" fill="none">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="440" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102334"/>
+      <stop offset="1" stop-color="#07121F"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#2F9B88" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#2F9B88" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="440" height="280" fill="url(#background)"/>
+  <circle cx="372" cy="126" r="170" fill="url(#glow)"/>
+  <rect x="12.5" y="12.5" width="415" height="255" rx="16" stroke="#315060"/>
+  <rect x="28" y="29" width="164" height="25" rx="12.5" fill="#173D3D"/>
+  <text x="41" y="46" fill="#79E2C7" font-family="DejaVu Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="1.45">BROWSER EXTENSION</text>
+  <g font-family="DejaVu Sans, sans-serif" fill="#F0F9F7">
+    <text x="28" y="105" font-size="30" font-weight="700" letter-spacing="-.8">Single Screen</text>
+    <text x="28" y="143" font-size="30" font-weight="700" letter-spacing="-.8">View</text>
+    <text x="28" y="191" font-size="18" fill="#C2D8DC">One local screen view</text>
+    <text x="28" y="237" font-size="13" fill="#79E2C7">Open source · No analytics</text>
+  </g>
+  <svg x="302" y="76" width="108" height="108" viewBox="0 0 128 128" fill="none">
+    <rect width="128" height="128" rx="28" fill="#102334"/>
+    <rect x="1" y="1" width="126" height="126" rx="27" stroke="#315060" stroke-width="2"/>
+    <rect x="23" y="29" width="82" height="58" rx="8" fill="#1D403E" stroke="#79E2C7" stroke-width="4"/>
+    <path d="M64 88v12M47 101h34" stroke="#79E2C7" stroke-width="4" stroke-linecap="round"/>
+    <path d="m59 45 8-4v31" stroke="#C2F4E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</svg>
