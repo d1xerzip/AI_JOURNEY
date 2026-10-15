@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Single Screen View</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header class="brand">
+      <img class="brand-mark" src="assets/single-screen-view.svg" width="44" height="44" alt="">
+      <div><p class="eyebrow" data-i18n="brandEyebrow">YOUR BROWSER, SIMPLIFIED</p><h1>Single Screen View</h1></div>
+    </header>
+
+    <section class="mode-card" aria-labelledby="status">
+      <div class="status-row"><span id="indicator" class="dot" aria-hidden="true"></span><h2 id="status" aria-live="polite" data-i18n="loading">Loading…</h2><span class="mode-badge" data-i18n="modeBadge">LOCAL</span></div>
+      <p class="mode-description" data-i18n="modeDescription">One display through supported screen APIs. A steady configuration for web pages.</p>
+      <div class="screen-preview" aria-hidden="true"><div class="display"><div class="display-top"><span></span><span></span><span></span></div><span class="display-number">1</span><span class="display-line"></span></div><div class="display-stand"></div></div>
+      <div class="mode-summary"><span data-i18n="screenConfiguration">Screen configuration</span><strong data-i18n="singleDisplay">One display</strong></div>
+    </section>
+
+    <div class="actions">
+      <button id="toggle" class="primary" disabled data-i18n="pleaseWait">Please wait…</button>
+      <button id="reload" class="secondary"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 7v5h-5M19.4 12a7.5 7.5 0 1 1-2.2-5.3L20 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="reloadTab">Reload this tab</span></button>
+    </div>
+    <p id="notice" class="notice" role="status" data-i18n="reloadHint">Reload a page after changing the mode. Applies to HTTP and HTTPS pages in this browser.</p>
+
+    <details class="about">
+      <summary><span data-i18n="limitsTitle">What this changes</span><span class="chevron" aria-hidden="true">⌄</span></summary>
+      <p data-i18n="limitsText">Changes supported web screen APIs and suppresses their screen configuration events. Native apps and screen sharing still see your real displays. Other signals may reveal multiple screens.</p>
+    </details>
+    <button id="media-check" class="diagnostics" data-i18n="openMediaCheck">Check camera & microphone ↗</button>
+    <footer><span class="privacy-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 10V7a5 5 0 0 1 10 0v3M6 10h12v11H6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="15" r="1.2" fill="currentColor"/></svg></span><span data-i18n="privacyText">Local settings. No analytics or data sent.</span><span id="version" class="version"></span></footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

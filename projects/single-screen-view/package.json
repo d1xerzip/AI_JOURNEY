@@ -1,0 +1,13 @@
+{
+  "name": "single-screen-view",
+  "version": "0.2.1",
+  "private": true,
+  "description": "Local Chromium screen API compatibility extension",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs --test",
+    "build": "python3 scripts/build.py"
+  }
+}

@@ -1,0 +1,39 @@
+name: Single Screen View beta release
+on:
+  push:
+    branches: [main]
+    paths: ['projects/single-screen-view/CHANGELOG.md']
+  workflow_dispatch:
+permissions:
+  contents: read
+defaults:
+  run:
+    working-directory: projects/single-screen-view
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm test
+      - run: python3 scripts/build.py
+      - name: Publish current beta if absent
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_COMMIT: ${{ github.sha }}
+        run: |
+          release_version=$(node -p 'require("./extension/manifest.json").version')
+          release_tag="ssv-v$release_version"
+          if gh release view "$release_tag" >/dev/null 2>&1; then
+            echo "Release already exists; leaving it unchanged."
+            exit 0
+          fi
+          gh release create "$release_tag" dist/*.zip --target "$RELEASE_COMMIT" --prerelease --title "Single Screen View $release_version beta" --notes-file docs/RELEASE_NOTES.md

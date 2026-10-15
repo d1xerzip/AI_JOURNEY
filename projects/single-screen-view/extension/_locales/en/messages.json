@@ -1,0 +1,137 @@
+{
+  "extensionName": {
+    "message": "Single Screen View"
+  },
+  "extensionDescription": {
+    "message": "Present one display through supported web screen APIs. Local controls, no analytics, no data sent."
+  },
+  "brandEyebrow": {
+    "message": "YOUR BROWSER, SIMPLIFIED"
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "modeBadge": {
+    "message": "LOCAL"
+  },
+  "modeDescription": {
+    "message": "One display through supported screen APIs. A steady configuration for web pages."
+  },
+  "screenConfiguration": {
+    "message": "Configured screen view"
+  },
+  "singleDisplay": {
+    "message": "One display"
+  },
+  "pleaseWait": {
+    "message": "Please wait…"
+  },
+  "reloadTab": {
+    "message": "Reload this tab"
+  },
+  "reloadHint": {
+    "message": "Reload a page after changing the mode. Applies to HTTP and HTTPS pages in this browser."
+  },
+  "limitsTitle": {
+    "message": "What this changes"
+  },
+  "limitsText": {
+    "message": "Changes supported web screen APIs and suppresses their screen configuration events. Native apps and screen sharing still see your real displays. Other signals may reveal multiple screens."
+  },
+  "privacyText": {
+    "message": "Local settings. No analytics or data sent."
+  },
+  "modeEnabled": {
+    "message": "Mode enabled"
+  },
+  "modePaused": {
+    "message": "Mode off"
+  },
+  "turnOff": {
+    "message": "Turn off"
+  },
+  "turnOn": {
+    "message": "Enable single screen mode"
+  },
+  "invalidState": {
+    "message": "Could not read the mode. Close and reopen this popup."
+  },
+  "unavailable": {
+    "message": "Mode unavailable"
+  },
+  "reopenPopup": {
+    "message": "Reopen popup to retry"
+  },
+  "noResponse": {
+    "message": "The extension did not respond. Close and reopen this popup."
+  },
+  "modeChanged": {
+    "message": "Mode changed. Reload the page to apply it. Existing pages keep their previous state until reloaded."
+  },
+  "noActiveTab": {
+    "message": "No active tab was found."
+  },
+  "openMediaCheck": {
+    "message": "Check camera & microphone ↗"
+  },
+  "mediaPageTitle": {
+    "message": "Camera & microphone check · Single Screen View"
+  },
+  "mediaEyebrow": {
+    "message": "LOCAL DIAGNOSTICS"
+  },
+  "mediaHeading": {
+    "message": "Check camera & microphone"
+  },
+  "mediaIntro": {
+    "message": "Each button requests normal browser permission, then immediately stops every acquired track. No preview, recording, or upload."
+  },
+  "mediaContext": {
+    "message": "This checks the extension page’s permission context. A successful result does not prove that another website has permission, or that its frame policies allow access."
+  },
+  "mediaChoose": {
+    "message": "Choose a check"
+  },
+  "mediaCamera": {
+    "message": "Camera only"
+  },
+  "mediaMicrophone": {
+    "message": "Microphone only"
+  },
+  "mediaBoth": {
+    "message": "Camera + microphone"
+  },
+  "mediaIdle": {
+    "message": "No check has run. Access is requested only when you click a button."
+  },
+  "mediaHelp": {
+    "message": "If this works but a website still fails, check that site’s camera and microphone permissions, your operating system’s privacy settings, and whether another application is using the device."
+  },
+  "mediaPrivacy": {
+    "message": "Results stay in this tab and disappear when it closes. Device names and identifiers are not collected."
+  },
+  "mediaRequesting": {
+    "message": "Requesting access… Respond to the browser’s permission prompt if one appears."
+  },
+  "mediaUnavailable": {
+    "message": "The media capture API is unavailable in this context."
+  },
+  "mediaFailed": {
+    "message": "Access failed. Browser error:"
+  },
+  "mediaSucceeded": {
+    "message": "Access succeeded."
+  },
+  "mediaTracks": {
+    "message": "Received track types"
+  },
+  "mediaNoTracks": {
+    "message": "none"
+  },
+  "mediaStopped": {
+    "message": "All acquired tracks have been stopped."
+  },
+  "mediaCleanupFailed": {
+    "message": "A track could not be stopped. Close this tab to release access."
+  }
+}
